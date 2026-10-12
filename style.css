@@ -2,7 +2,7 @@
 :root {
     --base-color: #fceccc;
     --text-color: #000000;
-    --color-1: #f2f0eb;
+    --footer-color: #3e4754;
     --color-2: #f2f0eb;
     --color-3: #f2f0eb;
 }
@@ -19,7 +19,7 @@ html {
 }
 
 body {
-    padding: 1em;
+    padding: 0.25em 1em 1em 1em;
     background-color: var(--base-color);
 }
 
@@ -27,16 +27,26 @@ h1, h2, h3 {
     font-family: "Roboto Mono", sans-serif;
 }
 
-.flex_container {
+footer {
+    margin-top: 2em;
+    margin: 7em -1em -1em -1em;
+    background-color: var(--footer-color);
+    color: white;
+    padding: 74px;
+}
+
+.flex-container {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row-reverse;
     align-items: center;
 
 }
 
 nav {
-    margin: 1em auto 2em auto;
+    margin: 0em auto 2em auto;
     width: min(1000px, 100%);
+    border-bottom: 1px solid #848582;
+    padding: 1em;
 
 }
 
