@@ -16,6 +16,14 @@
 html {
     font-family: "Roboto Mono", sans-serif;
     color: var(--text-color);
+    scroll-behavior: smooth;
+
+}
+
+/* To adjust the image size responsively */
+.flex-container img{
+    max-width: 100%;
+    height: auto;
 }
 
 body {
@@ -27,6 +35,7 @@ h1, h2, h3 {
     font-family: "Roboto Mono", sans-serif;
 }
 
+/* Contact information footer */
 footer {
     margin-top: 2em;
     margin: 7em -1em -1em -1em;
@@ -35,10 +44,19 @@ footer {
     padding: 74px;
 }
 
+/* Easier to row reverse than to change order in the index.html and prepares for flex items*/
 .flex-container {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    gap: 3em;
+    
+
+}
+
+.text-container {
+    flex: 1;
+    text-align: center;
 
 }
 
@@ -75,5 +93,13 @@ nav a {
 nav a:hover{
     box-shadow: inset 100px 0 0 0 var(--text-color);
     color: white;
+
+}
+
+@media (max-width: 700px) {
+    .flex-container {
+        flex-direction: column;
+        gap: 1.5em;
+    }
 
 }
