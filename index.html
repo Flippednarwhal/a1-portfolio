@@ -26,35 +26,42 @@ EMAIL: reids1@uci.edu NOT my github name
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+      <!-- Portrait image of auther -->
       <div class="flex-container">
-        <img height="400px", width= "300px", src="images/Portrait.jpg" alt="An black and white image of a man with long hair standing in front of a fountaint wearing a hat and a coat">
+        <img height="400" width= "300" src="images/Portrait.jpg" alt="An black and white image of a man with long hair standing in front of a fountaint wearing a hat and a coat">
         
         <div class="text-container">
           <h1>Personal Projects</h1>
-          <p>Hi, my name is Reid and I'm a Computer Science Student at <strong>UCI</strong> with a strong passion in <strong>Visual AI Systems</strong> and am currently residing in California<p>
+          <p>Hi, my name is Reid and I'm a Computer Science Student at <strong>UCI</strong> with a strong passion in <strong>Visual AI Systems</strong> and am currently residing in California</p>
 
         </div>
       </div>
   </header>
 
-
+  <!-- Contact form footer -->
   <footer id="contact">
+      <h2>Contact</h2><br><br><br>
 
     <div class="flex-container">
-      <form action="action_page.php">
+      <form id="contact-form">
 
+        <!-- Different fields required -->
         <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="your name..">
+        <input type="text" id="fname" name="firstname" placeholder="your name">
         
         <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="your last name..">
+        <input type="text" id="lname" name="lastname" placeholder="your last name">
+
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="your email">
 
         <label for="country">Country</label>
         <select id="country" name="country">
-          <option value="cananda">Canada</option>
           <option value="usa">United States</option>
+          <option value="canada">Canada</option>
         </select>
 
+        <!-- Main message box -->
         <label for="subject">Subject</label>
         <textarea id="subject" name="subject" placeholder="Write here" style="height: 200px;"></textarea>
 
@@ -64,16 +71,6 @@ EMAIL: reids1@uci.edu NOT my github name
     </div>
 
 
-    <p>
-      <h2>Contact</h2>
-
-      <!-- <a href="http://validator.w3.org/check?uri=referer">
-        W3C validator
-      </a> -->
-      Email: <strong>Reidthom1095@gmail.com</strong><br>
-      Number: <strong>415-319-5550</strong>
-
-    </p>
   </footer>
 </body>
 </html>

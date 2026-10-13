@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 :root {
     --base-color: #fceccc;
     --text-color: #000000;
@@ -26,6 +27,7 @@ html {
     height: auto;
 }
 
+/* For the page spacing */
 body {
     padding: 0.25em 1em 1em 1em;
     background-color: var(--base-color);
@@ -60,6 +62,7 @@ footer {
 
 }
 
+/* navigation bar with responsive properties */
 nav {
     margin: 0em auto 2em auto;
     width: min(1000px, 100%);
@@ -68,6 +71,8 @@ nav {
 
 }
 
+/* Nav spacing and centering */
+
 nav ul {
     display: flex;
     align-items: center;
@@ -75,12 +80,14 @@ nav ul {
     gap:2em
 }
 
+/* To seperate my name from the options */
 nav li:first-child {
     margin-right: auto;
     font-weight: bold;
 
 }
 
+/* Nav link color changing on hover*/
 nav a {
     text-decoration: none;
     color: var(--text-color);
@@ -96,10 +103,49 @@ nav a:hover{
 
 }
 
+/* Resposive properties */
 @media (max-width: 700px) {
     .flex-container {
         flex-direction: column;
         gap: 1.5em;
     }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1em;
+    }
+
+    nav li:first-child {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    footer {
+        padding: 2em 1em;
+    }
+
+}
+
+/* Input fields for footer style */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #ccc;
+    color: white;
+    padding : 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 
 }
